@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgb(255, 235, 133);
+  --button-color: ;
+  --font-on-dark: white;
+}
+
+/* nav responsiveness  */
+ul {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 10%; */
+  margin-top: 0;
+}
+
+ul li {
+  margin-right: 60px;
+  list-style: none;
+  color: var(--font-on-dark);
+  margin-top: 40px;
+}
+/* nav responsiveness  */
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32%;
+  margin-top: 10vh;
+}
+
+.content .span {
+  font-family: "Qwigley", cursive;
+  color: var(--background);
+}
+
+/* .footer {
+  background-color: var(--background);
+  margin-top:  */
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+    url(resources/moritz-mentges-Z40sav8IYqQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.logoText {
+  color: #fffefe;
+  font-family: raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  height: 130px;
+}
+
+.logoPara {
+  color: var(--font-on-dark);
+  margin-top: 0;
+  margin-left: 10%;
+}
+
+.qr-code {
+  background-image: url(https://images.unsplash.com/photo-1600147131759-880e94a6185f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid --font-on-dark;
+  background-color: var(--font-on-dark);
+  border-radius: 10px;
+  margin-top: 0;
+  margin-left: 120px;
+}
+
+.input {
+  height: 20px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 32px;
+  border: none;
+  background: #fff;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.btn {
+  height: 20px;
+  width: 100px;
+  padding: 15px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 180px;
+  margin-top: 50px;
+  background-color: var(--background);
+}
+
+.btn:hover {
+  background-color: var(--background);
+  box-shadow: 2px 5px 5px rgba(247, 235, 173, 0.5);
+}
+
+ul li :hover {
+  /* background-color: white; */
+  color: var(--background);
+  border-bottom: 3px solid var(--background);
+  padding: 5px;
+}
+
+/* Responsiveness on mobile */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .content {
+    margin-right: 20%;
+  }
+  /* ul li {
+    display: none;
+  } */
+
+  /* nav responsiveness  */
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  ul li {
+    margin-right: 0;
+  }
+  /* nav responsiveness  */
+  .logoText {
+    color: #fffefe;
+    font-family: raleway;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 0;
+    height: 70px;
+    /* margin-right: 20px; */
+    margin-bottom: 0;
+  }
+  .logoPara {
+    color: var(--font-on-dark);
+    margin-top: 0;
+    margin-left: 6%;
+    font-size: 12px;
+  }
+  .qr-code {
+    background-image: url(https://images.unsplash.com/photo-1600147131759-880e94a6185f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 190px;
+    border: 2px solid --font-on-dark;
+    background-color: var(--font-on-dark);
+    border-radius: 10px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .input {
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 32px;
+    border: none;
+    background: #fff;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .btn {
+    height: 20px;
+    width: 100px;
+    padding: 15px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: var(--background);
+  }
+
+  .btn:hover {
+    background-color: var(--background);
+    box-shadow: 2px 5px 5px rgba(247, 235, 173, 0.5);
+  }
+}
