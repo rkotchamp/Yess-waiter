@@ -134,18 +134,19 @@ ul li :hover {
   .container {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
   }
   .content {
     margin-right: 20%;
   }
-  /* ul li {
+
+  ul li {
     display: none;
-  } */
+  }
 
   /* nav responsiveness  */
-  ul {
+  /* ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -163,7 +164,7 @@ ul li :hover {
     font-weight: 400;
     padding-bottom: 0;
     height: 70px;
-    /* margin-right: 20px; */
+    margin-right: 20px;
     margin-bottom: 0;
   }
   .logoPara {
@@ -213,5 +214,8 @@ ul li :hover {
   .btn:hover {
     background-color: var(--background);
     box-shadow: 2px 5px 5px rgba(247, 235, 173, 0.5);
+  }
+  a {
+    text-decoration: none;
   }
 }

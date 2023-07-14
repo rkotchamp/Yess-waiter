@@ -4,3 +4,12 @@ Benefits:
 customers can just order without having to speak to a waiter.
 
 add and de-select order as they pleases.
+
+## Authors
+
+- [@Reuben Tetteh](https://www.github.com/rkotchamp)
+
+## Tech Stack
+
+**Client:**
+html & css
